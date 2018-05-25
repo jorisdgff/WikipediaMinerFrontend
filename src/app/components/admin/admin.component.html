@@ -1,0 +1,9 @@
+<a (click)="startIndexing()">Start indexing</a>
+{{message}}
+
+
+<ul>
+  <li *ngFor="let itemprogress of progress.itemProgress">
+    {{itemprogress.filename}} {{itemprogress.filesize}}Mb {{itemprogress.progress}}%
+  </li>
+</ul>
